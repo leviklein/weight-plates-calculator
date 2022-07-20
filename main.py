@@ -9,11 +9,11 @@ def powerset(iterable):
 
 def main():
     parser = argparse.ArgumentParser(description='Computes all combinations of weights given a set of plates')
-    parser.add_argument('float', metavar='N', type=float, nargs='+',
-                        help='float value of plate')
+    parser.add_argument('plates', metavar='N', type=float, nargs='+',
+                        help='weight of plate')
 
     args = parser.parse_args()
-    plates = sorted(args.float, reverse=True)
+    plates = sorted(args.plates, reverse=True)
     print(f"Plates provided: {plates}")
     weights = defaultdict(list)
 

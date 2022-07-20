@@ -2,10 +2,18 @@
 
 This small script calculates all the possible weight combinations given a set of plates
 
-## Instructions
+## Usage
+
+Run the script using
 
 ```python
 python main.py plate1 plate2 ... plateN
+```
+
+there is also a help menu
+
+```python
+python main.py -h
 ```
 
 Example:
